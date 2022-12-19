@@ -5,7 +5,7 @@ int number = int.Parse(Console.ReadLine()!);
 //int number = new Random().Next(100, 1000);
 
 
-if ((99<number) && (number<1000))
+if (((99<number) && (number<1000)) || ((-1000<number) && (number<-99)))
 {
     Console.Write($"Трехзначное число: {number} Второй знак числа: {((number%100)-(number%100)%10)/10}");
 }
