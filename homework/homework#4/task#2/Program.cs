@@ -6,14 +6,14 @@ Console.WriteLine ($"Сумма всех чисел числа {number} равн
 
 
 int SumNumber(int number){
- int count = 0;
- int digit = 1;
  string sum = Convert.ToString(number);
+ int summa = 0;
     for(int i = 0; i < sum.Length; i++){
-        digit=digit*10;
-        count=number%digit;
-        Console.WriteLine(count);
+        
+        summa = summa + number%10;
+        number=number/10;
+        
     }
-return count;
+return summa;
 }
 
