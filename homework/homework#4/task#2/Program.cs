@@ -1,15 +1,18 @@
 ﻿Console.WriteLine ("Ввкдите целое число: ");
-string number = Console.ReadLine()!;
+int number = Convert.ToInt32(Console.ReadLine()!);
 
 
 Console.WriteLine ($"Сумма всех чисел числа {number} равна {SumNumber(number)} ");
 
 
-int SumNumber(string number){
+int SumNumber(int number){
  int count = 0;
-    for(int i = 0; i < number.Length; i++){
-        count=count+Convert.ToInt32(Convert.ToString(number[i]));
-        Console.WriteLine(Convert.ToInt32(Convert.ToString(number[i])));
+ int digit = 1;
+ string sum = Convert.ToString(number);
+    for(int i = 0; i < sum.Length; i++){
+        digit=digit*10;
+        count=number%digit;
+        Console.WriteLine(count);
     }
 return count;
 }
