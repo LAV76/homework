@@ -3,6 +3,7 @@ string number = Console.ReadLine()!;
 
 Console.WriteLine ($"Сумма всех чисел числа {number} равна {SumNumber(number)} ");
 
+
 int SumNumber(string number){
  int count = 0;
     for(int i = 0; i < number.Length; i++){
