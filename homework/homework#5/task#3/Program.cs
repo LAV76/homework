@@ -1,4 +1,4 @@
-﻿int[] array = GetArray(5));
+﻿int[] array = GetArray(5);
 Console.WriteLine($"В массие: [{String.Join(", ", array)}] произведение пар [{String.Join(", ",GerCount(array))}]");
 
 //----------------Методы-----
