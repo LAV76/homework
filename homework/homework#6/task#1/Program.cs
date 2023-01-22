@@ -1,13 +1,16 @@
-﻿Console.WriteLine("Введите произвольное количество чисел, через пробел после окончания набора нажмите Enter");
+﻿Console.WriteLine("Введите произвольное количество чисел, после окончания набора нажмите Escape");
 int i = 0;
+int j = 0;
 ConsoleKeyInfo kay;
 do
 {
+    string number = Console.ReadLine()!;
+    Console.WriteLine("Введите следующее число или нажмите Escape");
     kay = Console.ReadKey();
-    int number = Convert.ToInt32(Console.ReadLine()!);
-    if (number>0) i++;
+    j++;
+    if (number != "0") i++;
 
     
 } while (kay.Key != ConsoleKey.Escape);
 
-Console.WriteLine($"Количество введеных чисел больше 0 = {i}");
+Console.WriteLine($"Количество введеных чисел больше 0 = {i} всего введено {j} числел");
