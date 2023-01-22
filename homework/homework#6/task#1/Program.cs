@@ -10,7 +10,6 @@ do
     j++;
     if (number != "0") i++;
 
-    
 } while (kay.Key != ConsoleKey.Escape);
 
 Console.WriteLine($"Количество введеных чисел больше 0 = {i} всего введено {j} числел");
